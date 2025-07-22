@@ -1,4 +1,4 @@
-Extended Euclidean Algorithm (Java)
+**Extended Euclidean Algorithm (Java)**
 This repository contains a simple Java implementation of the Extended Euclidean Algorithm. It calculates the greatest common divisor (GCD) of two integers and uses recursion to perform the extended operations based on the Euclidean method.
 
 📌 Description
