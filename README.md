@@ -1,23 +1,24 @@
-**Extended Euclidean Algorithm (Java)**
-This repository contains a simple Java implementation of the Extended Euclidean Algorithm. It calculates the greatest common divisor (GCD) of two integers and uses recursion to perform the extended operations based on the Euclidean method.
+# Extended Euclidean Algorithm (Java)
 
-📌 Description
+This repository contains a simple Java implementation of the **Extended Euclidean Algorithm**. It calculates the **greatest common divisor (GCD)** of two integers using recursion based on the Euclidean method.
+
+## 📌 Description
+
 The program takes two integers as input and uses the Extended Euclidean Algorithm to compute:
 
-The GCD of the two input numbers
+- The **GCD** of the two input numbers  
+- (Optionally) This algorithm can be extended to find Bézout coefficients `x` and `y` such that: ax + by = gcd(a, b)
 
-(Optionally) The Bézout coefficients x and y such that:
-ax + by = gcd(a, b)
+This version currently focuses on computing and returning the GCD.
 
-🚀 How It Works
-The algorithm is implemented recursively.
+## 💡 How It Works
 
-At each step, it calculates the quotient q and updates the remainders and coefficients until the remainder becomes 0.
+- The algorithm uses a recursive approach.
+- At each step, it performs integer division and updates the coefficients and remainders.
+- The process continues until the remainder becomes 0, and the last non-zero remainder is the GCD.
 
-The final result is the GCD of the two input numbers.
+## 🖥️ Example Usage
 
-🖥️ Example Usage
-bash
 $ javac ExtendedEuclidian.java
 $ java ExtendedEuclidian
 Enter the first number:
@@ -25,12 +26,22 @@ Enter the first number:
 Enter the second number:
 48
 The gcd of (60,48)= 12
-📂 Files
-ExtendedEuclidian.java – Main class containing the logic for input handling and computing the GCD using recursion.
 
-✅ Features
-Recursive implementation
+## 📂 File Structure
 
-Efficient integer division and remainder tracking
+- `ExtendedEuclidian.java` – Java class containing recursive implementation for computing GCD.
 
-Simple console input/output
+## ✅ Features
+
+- Accepts user input from console
+- Recursive implementation
+- Efficient and clean approach to GCD computation
+
+## 🔧 Requirements
+
+- Java 8 or higher
+- Command-line interface (CLI) for input/output
+
+---
+Feel free to fork the repo, improve the code, and submit pull requests! 💻✨
+
